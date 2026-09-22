@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backend switch plan — 20 weeks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Twenty weeks to a better backend offer</h1>
+  <p class="sub">A periodised plan for a Node.js engineer with 2.5 years of experience: JavaScript down to the metal, Node and data-layer depth, design rounds, and roughly 390 DSA problems. Built for about 18 hours a week alongside a full-time job.</p>
+
+  <div class="blockwrap">
+    <div class="blocks" id="blocks"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <div class="meter">
+    <span class="big" id="pct">0%</span>
+    <div class="bar"><i id="barfill"></i></div>
+    <span class="eyebrow" id="count">0 of 0 done</span>
+    <button class="ghost" id="reset">Reset progress</button>
+  </div>
+  <div class="notice" id="notice" style="display:none"></div>
+</header>
+
+<section>
+  <h2>How the week runs</h2>
+  <div class="prose">
+    <p>The split never changes, which is the point. DSA is a daily habit, not a weekend sprint — that is the single biggest difference between people who clear the coding round and people who keep almost clearing it.</p>
+  </div>
+  <table>
+    <tr><th>Day</th><th>Time</th><th>Block</th></tr>
+    <tr><td>Mon–Fri, morning</td><td class="n">60 min</td><td>DSA — that week's pattern, 3–4 problems</td></tr>
+    <tr><td>Mon–Fri, evening</td><td class="n">90 min</td><td>Core topic: read, then build something tiny that proves it</td></tr>
+    <tr><td>Saturday</td><td class="n">4 hr</td><td>Project work + redo every DSA problem you failed this week</td></tr>
+    <tr><td>Sunday</td><td class="n">3 hr</td><td>Design or LLD practice, write the week's notes, plan next week</td></tr>
+  </table>
+  <div class="card">
+    <h3>Five rules that decide whether this works</h3>
+    <ul class="plain">
+      <li>Give a problem 25 minutes. If it's not moving, read the editorial, understand it fully, then close it and re-solve from an empty file.</li>
+      <li>Re-solve every failed problem after 3 days and again after 10. Spaced repetition is what makes patterns stick.</li>
+      <li>Keep one mistake log file. Every bug, every wrong assumption, one line each. Re-read it every Sunday.</li>
+      <li>Write your notes in your own words. Copy-pasted notes feel productive and teach you nothing.</li>
+      <li>Say your reasoning out loud while you solve, from week one. Interviews grade your narration as much as your code.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="plan">
+  <h2>The plan</h2>
+  <div id="phases"></div>
+</section>
+
+<section>
+  <h2>Where to learn each thing</h2>
+  <div class="card">
+    <h3>JavaScript</h3>
+    <ul class="plain">
+      <li>Namaste JavaScript (Akshay Saini) for the event loop and closures, visually</li>
+      <li>javascript.info as the reference you actually read end to end</li>
+      <li>You Don't Know JS Yet (Kyle Simpson) for scope, closures, and <code>this</code></li>
+      <li>MDN for anything you are unsure about mid-build</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Node and backend</h3>
+    <ul class="plain">
+      <li>Node.js Design Patterns (Casciaro &amp; Mammino) — streams and async patterns chapters are the valuable part</li>
+      <li>The official Node docs on the event loop, streams, and worker threads</li>
+      <li>Hussein Nasser on backend and database internals</li>
+      <li>OWASP API Security Top 10</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Databases</h3>
+    <ul class="plain">
+      <li>Use The Index, Luke — for indexing intuition</li>
+      <li>PostgreSQL docs on EXPLAIN, isolation levels, and MVCC</li>
+      <li>MongoDB University's data modelling course</li>
+      <li>Designing Data-Intensive Applications (Kleppmann) — chapters 1–7 and 11, skim the rest</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>DSA and design</h3>
+    <ul class="plain">
+      <li>Striver's A2Z DSA sheet or NeetCode 150 — pick <em>one</em> and finish it</li>
+      <li>LeetCode for volume, plus two contests a month from week 8 onward</li>
+      <li>System Design Interview Vol 1 &amp; 2 (Alex Xu)</li>
+      <li>Arpit Bhayani and Gaurav Sen for design intuition; Refactoring Guru for patterns</li>
+    </ul>
+  </div>
+  <p class="eyebrow" style="margin-top:14px">These are from memory, not a live lookup — check the exact titles and links before you buy anything.</p>
+</section>
+
+<section>
+  <h2>If you have less than five months</h2>
+  <div class="prose">
+    <p>Compress to 12 weeks by halving Phase 1 to two weeks (you already write JavaScript daily — keep the async and polyfill weeks, skim the rest), cutting Project 2, and reducing DSA to ~250 problems by dropping the harder DP and graph tiers. Do not cut the mock-interview weeks. They convert more offers per hour than anything else on this page.</p>
+  </div>
+</section>
+
+<footer>
+  Progress is stored in this browser only. Clearing site data resets it.
+</footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
